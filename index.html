@@ -22,6 +22,11 @@
         </div>
     </header>
 
+    <div id="top">
+        <h1>Top!</h1>
+        <h3>Super top!</h3>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         function slowScroll(id) {
@@ -29,6 +34,13 @@
             scrollTop: $(id).offset().top
            },500); 
         }
+
+        $(document).on("scroll", function(){
+            if($(window).scrollTop()===0)
+            $("header").removeClass("fixed");
+            else
+            $("header").attr("class","fixed");
+        });
     </script>
 
 </body>
