@@ -99,7 +99,7 @@ header.fixed #logo {
     background-color: #2e3a44;
     background-size: cover;
     text-align: center;
-    color:#fff;
+    color: white;  /*#fff;
 }
 
 @media (min-width: 1001px){
